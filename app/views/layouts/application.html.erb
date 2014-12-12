@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diet Plans</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header class="clearfix">
+  <div class="logo col-md-3"><h2 class="logo-text">Diet Plans</h2></div>
+  <nav class="clearfix">
+    <ul class="clearfix">
+      <li><a href="#" class="active">Plans</a></li>
+      <li><a href="#">Sign up</a></li>
+      <li><a href="#" class="last">Sign in</a></li>
+    </ul>
+  </nav>
+  <div class="pullcontainer">
+    <a href="#" id="pull"><i class="fa fa-bars fa-2x"></i></a>
+  </div>
+</header>
+<%= yield %>
+<div class="shadow"></div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <h2>Diet Plan</h2>
+      </div>
+      <div class="col-md-5">
+        <p>Diet Plans</p>
+      </div>
+      <div class="col-md-3">
+        <p>Diet Plans</p>
+      </div>
+      <div class="col-md-2">
+        <ul class="footer-links">
+          <li><a href="#">Plans</a></li>
+          <li><a href="#">Sign up</a></li>
+          <li><a href="#">Sign in</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
